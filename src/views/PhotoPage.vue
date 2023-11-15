@@ -80,7 +80,7 @@ export default defineComponent({
       let data;
       context.drawImage(this.myVideo, 0,0, 300, 400);
       jpg_as_text = this.myCanvas.toDataURL("image/jpeg").split(';base64,')[1];               
-      this.mqttHook.publish("screenshotFrame",jpg_as_text);  
+      this.mqttHook.publish("screenshotFrameAnna",jpg_as_text,2);  
       this.showImage(this.myCanvas.toDataURL("image/jpeg")); 
     },
     showImage(image) {   
@@ -117,32 +117,31 @@ export default defineComponent({
     };
   }
 })
-
 </script>
-  <style scoped>
-  #container {
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  #container strong {
-    font-size: 20px;
-    line-height: 26px;
-  }
-  
-  #container p {
-    font-size: 16px;
-    line-height: 22px;
-    color: #8c8c8c;
-    margin: 0;
-  }
-  
-  #container a {
-    text-decoration: none;
-  }
+
+<style scoped>
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
 </style>
-  

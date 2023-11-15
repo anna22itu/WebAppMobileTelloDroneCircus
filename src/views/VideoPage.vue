@@ -83,9 +83,9 @@ export default defineComponent({
       this.interval = setInterval(() => {
         context.drawImage(this.myVideo, 0,0, 300, 400);
         jpg_video = this.myCanvas.toDataURL("image/jpeg").split(';base64,')[1];                            
-        this.mqttHook.publish("videoFrame",jpg_video);   
+        this.mqttHook.publish("videoFrameAnna",jpg_video,0);   
         this.showVideo(this.myCanvas.toDataURL("image/jpeg"));         
-      }, 200);
+      }, 500);
     },
     stopCapture(){
       this.myStream.getTracks().forEach(function(track) {
