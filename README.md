@@ -1,6 +1,7 @@
 # Web App Mobile Tello Drone Circus
 
-![IMG_8491](https://github.com/anna22itu/WebAppMobileTelloDroneCircus/assets/80980228/5a0734f8-d247-4ea8-bb20-bf876ad653d1)
+
+<img width="794" alt="Captura de pantalla 2024-02-03 225412" src="https://github.com/anna22itu/WebAppMobileTelloDroneCircus/assets/80980228/8a3f61c3-48d5-4459-a53f-5cf9546c0c30">
 
 
 1. General Information
@@ -12,9 +13,9 @@
 2. Module
    
    It has three different tabs: 'Home', 'Video' and 'Photo', look at the Figure to see the distribution of it.
-   - Home Page:
-   - Video Page:
-   - Photo Page: 
+   - Home Page: Allow the website to load and check that everything works correctly.
+   - Video Page: It transmits the captured images in streaming from the mobile camera and sends them to the circus. Allows you to choose to transmit with the rear or front camera of the mobile.
+   - Photo Page: Transmite la foto tomada de la cámara del móvil y las envía al circo. Permite elegir transmitir con la cámara trasera o delantera del móvil.
 
 4. Demos
    
